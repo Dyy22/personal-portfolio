@@ -1,0 +1,399 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Righteous&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Poppins, sans-serif;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+    background-color: #ffab00;
+    box-shadow: 0 2px 1rem rgba(0,0,0,.2);
+}
+
+nav .wrapper{
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    line-height: 60px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.nav-logo {
+    font-family: Righteous, sans-serif;
+    font-size: 2.5em;
+    color: black;
+}
+
+.nav-logo span {
+    color: white;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: black;
+    padding: 10px 20px;
+    font-weight: 500;
+}
+
+.nav-item.hire {
+    background-color: black;
+    color: white;
+    margin: 0 20px;
+}
+
+#welcome-section {
+    height: 100vh;
+    background: linear-gradient(90deg, rgba(0,0,0,1) 30%, rgba(255,171,0,1) 30%);
+    color: white;
+}
+
+#welcome-section .wrapper {
+    max-width: 1200px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#welcome-section .logo {
+    max-width: 35%;
+    position: absolute;
+    left: 100px;
+    display: flex;
+    background-color: #ffab00;
+    border-radius: 50%;
+    padding: 50px;
+}
+
+#welcome-section .logo img{
+    width: 100%;
+    border-radius: 50%;
+}
+
+#welcome-section .heading {
+    position: absolute;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    min-width: 200px;
+    left: 400px;
+    bottom: 30px;
+    color: black;
+}
+
+#welcome-section h1 {
+    font-size: 4em;
+    font-family: Righteous;
+}
+
+#welcome-section p {
+    font-size: 24px;
+}
+
+.bottom-text p {
+    position: absolute;
+    bottom: 30px;
+    color: #ffab00;
+}
+
+.bottom-text a {
+    position: absolute;
+    right: 40px;
+    bottom: 30px;
+    font-size: 20px;
+    color: white;
+    background-color: black;
+    padding: 10px 20px;
+    box-shadow: 0 2px 1rem rgba(0,0,0,.3);
+    text-decoration: none;
+}
+
+#about {
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 110px;
+}
+
+.heading {  
+    padding: 110px 0 50px;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 1200px;
+    padding: 0 50px;
+}
+
+.cards .item {
+    padding: 70px 50px;
+    transition: .3s;
+}
+
+.cards .item:hover {
+    box-shadow: 0 2px 1rem rgba(0,0,0,.3);
+}
+
+.cards .logo {
+    font-size: 100px;
+    color: #ffab00;
+    margin-bottom: 30px;
+}
+
+.cards h3 {
+    margin-bottom: 10px;
+}
+
+.cards p {
+    font-size: .8em;
+}
+
+#projects {
+    min-height: 1100px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+#projects h1 {
+    padding: 110px 0 50px;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+    grid-gap: 10px;
+}
+
+.project-tile {
+    position: relative;
+}
+
+.project-tile .overlay {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    background-color: black;
+    opacity: 0;
+    transition: 0.5s;
+    text-decoration: none;
+    color: white;
+}
+
+.project-tile .overlay:hover {
+    opacity: 0.8;
+}
+
+.project-tile img {
+    width: 100%;
+    height: 100%;
+}
+
+.project-tile .project-title {
+    font-size: 2em;
+}
+
+.project-tile.desc {
+    grid-column: 1/3;
+    background-color: #ffab00;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    padding: 50px;
+}
+
+#projects .project-tile.desc h1 {
+    padding: 0; 
+    margin: 0;
+    color: black;
+    margin-bottom: 10px;
+}
+
+#projects .project-tile.desc span {
+    color: white;
+}
+
+#projects .project-tile.desc p {
+    font-size: .9em;
+    color: black;
+}
+
+#hire {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+#hire p {
+    opacity: .6;
+}
+
+form input {
+    font-family: inherit;
+    padding: 10px 20px;
+}
+
+form input[type=submit] {
+    background-color: black;
+    border: 2px solid black;
+    color: white;
+    padding: 10px 40px;
+    cursor: pointer;
+}
+
+form input[type=submit]:hover {
+    opacity: .9;
+}
+
+footer {
+    background-color: black;
+    color: white;
+}
+
+footer .wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+
+footer .logo {
+    font-family: 'Righteous';
+    font-size: 2.5em;
+    color: #ffab00;
+}
+
+footer span {
+    color: white;
+}
+
+footer .social {
+    text-align: center;
+}
+
+footer .social p {
+    font-size: 1.2em;
+}
+
+footer i {
+    font-size: 1.2em;
+    margin: 3px;
+    transition: .3s;
+    text-decoration: none;
+    color: white;
+}
+
+footer i:hover {
+    color: #ffab00;
+}
+
+@media (max-width: 950px) {
+    #welcome-section .heading {
+        left: 320px;
+    }
+}
+
+@media (max-width: 830px) {
+    #welcome-section .logo {
+        padding: 40px;
+    }
+    #welcome-section .heading {
+        left: 270px;
+    }
+}
+
+@media (max-width: 768px) {
+    #welcome-section {
+        background: #ffab00;
+    }
+
+    #welcome-section .wrapper {
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    #welcome-section .logo {
+        position: unset;
+        display: block;
+        max-width: 300px;
+        max-height: 300px;
+        padding: 0;
+        background-color: black;
+    }
+
+    #welcome-section .heading {
+        position: unset;
+        display: block;
+        padding: 0;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .bottom-text p {
+        display: none;
+    }
+
+    .bottom-text a {
+        position: unset;
+        display: block;
+        margin-top: 180px;
+        padding: 15px 30px;
+    }
+
+    .cards {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .cards .item {
+        text-align: center;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr 1fr;
+        max-width: 600px;
+    }
+
+    .project-tile.progate {
+        grid-column: 1/3;
+    }
+}
+
+@media (max-width: 600px) {
+    .project-grid {
+        grid-template-columns: 1fr;
+        max-width: 400px;
+    }
+
+    .project-tile.progate {
+        grid-column: unset;
+    }
+
+    .project-tile.desc {
+        grid-column: unset;
+    }
+}
